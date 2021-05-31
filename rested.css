@@ -69,7 +69,8 @@ body {
 }
 
 .btn:active {
-    color: <?rs $secondary-text-color; ?>;
+    /*color: <?rs $secondary-text-color; ?>;*/
+    color: red;
     text-decoration: none;
     transform: translateY(.2rem);
     box-shadow: <?rs $shadow; ?>;
