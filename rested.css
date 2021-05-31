@@ -299,3 +299,7 @@ body {
 .form__input::-webkit-input-placeholder {
     color: <?rs $secondary-background-color; ?>;
 }
+
+.anders {
+    color: red;
+}
