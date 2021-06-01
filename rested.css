@@ -7,14 +7,22 @@
 /* https://coolors.co/353535-3c6e71-ffffff-d9d9d9-284b63 */
 <?rs 
     set(primary-color,#284B63);
+    set(primary-highlight-color,#356381);
+    set(text-on-primary-color,#FFFFFF);
+
+    set(secondary-color,#3C6E71);
+    set(secondary-highlight-color,#4A898C);
+    set(text-on-secondary-color,#FFFFFF);
+
+    set(primary-background-color,#D9D9D9);
+    set(secondary-background-color,#FFFFFF);
+
     set(primary-text-color,#353535);
-    set(secondary-text-color,#FFFFFF);
-    set(primary-background-color,#FFFFFF);
-    set(primary-highlight-color,#3C6E71);
-    set(secondary-background-color,#D9D9D9);
+    set(secondary-text-color,#DDDDDD);
+
     set(warning-color,#FF8C00);
 
-    set(shadow,0 .3rem .5rem rgba(0,0,0,.4));
+    set(shadow,0 .1rem .5rem rgba(0,0,0,.4));
 
     set(grid-width,120rem);
     set(gutter-vertical,1rem);
@@ -45,7 +53,7 @@ body {
 }
 
 .color-primary {
-    color: <?rs $secondary-text-color; ?> !important;
+    color: <?rs $text-on-primary-color; ?> !important;
     background-color: <?rs $primary-color; ?> !important;
 }
 
@@ -53,7 +61,7 @@ body {
 .btn:link,
 .btn:visited {
     background-color: <?rs $primary-color; ?>;
-    color: <?rs $secondary-text-color; ?>;
+    color: <?rs $text-on-primary-color; ?>;
     text-transform: uppercase;
     text-decoration: none;
     padding: .5rem 2rem;
@@ -69,10 +77,8 @@ body {
 }
 
 .btn:active {
-    /*color: <?rs $secondary-text-color; ?>;*/
-    color: red;
+    color: <?rs $secondary-text-color; ?>;
     text-decoration: none;
-    transform: translateY(.2rem);
     box-shadow: <?rs $shadow; ?>;
 }
 
@@ -250,8 +256,8 @@ body {
     box-shadow: none !important;
 }
 
-.btn2:link,
-.btn2:visited {
+.m-btn:link,
+.m-btn:visited {
     color: <?rs $primary-color; ?>;
     text-decoration: none;
     padding: .1rem .3rem;
@@ -260,16 +266,17 @@ body {
     border-bottom: 2px solid <?rs $primary-color; ?>;
 }
 
-.btn2:hover {
+.m-btn:hover {
     background-color: <?rs $primary-highlight-color; ?>;
-    color: <?rs $secondary-text-color; ?>;
+    color: <?rs $text-on-primary-color; ?>;
     transform: translateY(-.2rem);
     border-bottom: 1px solid <?rs $primary-highlight-color; ?>;
     box-shadow: <?rs $shadow; ?>;
+    border-radius: .3rem;
 }
 
-.btn2:active {
-    color: <?rs $secondary-text-color; ?>;
+.m-btn:active {
+    color: <?rs $text-on-primary-color; ?>;
     text-decoration: none;
     transform: translateY(-.2rem);
 }
@@ -297,9 +304,5 @@ body {
 }
 
 .form__input::-webkit-input-placeholder {
-    color: <?rs $secondary-background-color; ?>;
-}
-
-.anders {
-    color: red;
+    color: <?rs $secondary-text-color; ?>;
 }
