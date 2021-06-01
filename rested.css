@@ -36,7 +36,10 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+    font-family: inherit;
+    line-height: 1.15;
 }
+
 
 /* root font-size (16px defailt) * 62.5% is 10, which makes rem units the same as px / 10 (100px becomes 10rem) */
 html {
@@ -73,6 +76,7 @@ body {
     transition: all .2s;
     box-shadow: <?rs $shadow; ?>;
     font-size: 1.6rem;
+    border: 0;
 }
 
 .button:hover,
