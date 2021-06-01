@@ -57,6 +57,9 @@ body {
     background-color: <?rs $primary-color; ?> !important;
 }
 
+.button,
+.button:link,
+.button:visited,
 .btn,
 .btn:link,
 .btn:visited {
@@ -72,10 +75,12 @@ body {
     font-size: 1.6rem;
 }
 
+.button:hover,
 .btn:hover {
     background-color: <?rs $primary-highlight-color; ?>;
 }
 
+.button:active,
 .btn:active {
     color: <?rs $secondary-text-color; ?>;
     text-decoration: none;
